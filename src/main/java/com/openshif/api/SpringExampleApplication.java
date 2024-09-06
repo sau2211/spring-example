@@ -15,7 +15,7 @@ public class SpringExampleApplication {
 	{
 		return "Welcome to first openshift deployment app";
 	}
-	@GetMapping("/input")
+	@GetMapping("/{input}")
 	public String congrats(@PathVariable String input)
 	{
 		return "hi "+ input + "Your application deployed successfully";
